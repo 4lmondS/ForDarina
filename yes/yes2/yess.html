@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bul Bul Gift For You<3</title>
+    <link rel="stylesheet" href="Style3.css">
+    <style>
+        .love-emoji-container {
+            position: fixed;
+            margin-top: 200px; /* Adjust the gap between the envelope and emoji */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .love-emoji {
+            font-size: 2em; /* Make the emoji bigger */
+            cursor: pointer; /* Change cursor to pointer to indicate clickability */
+        }
+        .click-here {
+            font-size: 1.1em; /* Adjust the font size as needed */
+        }
+    </style>
+</head>
+<body>
+    <div class="envelope" onclick="showLoveEmoji()">
+        <div class="back"></div>
+        <div class="letter">
+            <div class="heart"></div>
+            <div class="text">
+                <p>
+                    I want to say <br>
+                    many things but, <br>
+                    I can't express so I made <br>
+                    this for you <br>
+                    click this envelope!
+                </p>
+            </div>
+        </div>
+        <div class="front"></div>
+        <div class="top"></div>
+        <div class="shadow"></div>
+        <div class="text1">
+            <h2>Hey! Listen I Have Something For You</h2>
+        </div>
+    </div>
+    <!-- Love emoji and Click here -->
+    <div class="love-emoji-container" style="display: none;">
+        <a href="yes3/index.html"> <!-- Wrap the emoji with an anchor tag -->
+            <div id="loveEmoji" class="love-emoji">❤️</div>
+        </a>
+        <p class="click-here">↑↑↑</p>
+        <p class="click-here">Click here</p>
+    </div>
+
+    <script>
+        function showLoveEmoji() {
+            var loveEmojiContainer = document.querySelector(".love-emoji-container");
+
+            if (loveEmojiContainer.style.display === "none") {
+                loveEmojiContainer.style.display = "block";
+            } else {
+                loveEmojiContainer.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

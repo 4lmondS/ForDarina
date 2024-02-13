@@ -1,0 +1,27 @@
+
+body {
+  background-color: rgb(180, 104, 104);
+  color: rgb(255, 255, 255);
+  font-family: Circular, Helvetica arial, sans-serif;
+  margin: 0%;
+}
+
+
+
+
+
+
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #dfb2ff, #b784db);
+}
+
+
+
